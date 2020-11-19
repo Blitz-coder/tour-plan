@@ -471,4 +471,8 @@ template {
 @media (max-width: 576px) {
   .logo {
     width: 99px; } }
+
+@media (max-width: 320px) {
+  .container {
+    max-width: 279px; } }
 /*# sourceMappingURL=style.css.map */
