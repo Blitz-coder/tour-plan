@@ -1,0 +1,64 @@
+.packages
+  margin: 0 auto
+  padding: 40px 0 70px 0
+  width: 100%
+  max-width: 1110px
+  &-title
+    text-align: center
+    margin-top: 0
+    margin-bottom: 65px
+    font-style: normal
+    font-weight: bold
+    font-size: 36px
+    line-height: 45px
+    text-align: center
+    text-transform: uppercase
+  &-wrapper
+    display: grid
+    grid-template-columns: repeat(3, 1fr)
+    grid-template-rows: repeat(2, 1fr)
+    grid-gap: 30px
+  &__card
+    width: 350px
+    height: 500px
+    display: flex
+    position: relative
+    flex-direction: column
+    justify-content: flex-start
+    background-color: $dark
+    border-radius: 8px
+    overflow: hidden
+    &--1
+      width: 730px
+      grid-column: 1 / span 2
+      flex-direction: row
+    &-image
+      max-height: 250px
+    &-img
+      height: 100%
+      width: 100%
+      object-fit: cover
+    &-info
+      padding-top: 30px
+      padding-left: 32px
+    &-title
+      margin-top: 0
+      margin-bottom: 23px
+      padding-top: 0
+      font-style: normal
+      font-weight: bold
+      font-size: 18px
+      line-height: 23px
+      color: $light
+    &-offer
+      position: absolute
+      top: 26px
+      left: 0
+      font-style: normal
+      font-weight: 600
+      font-size: 8px
+      line-height: 10px
+      padding: 4px 9px
+      background-color: $primary
+      color: $light
+      border-radius: 0px 4px 4px 0px
