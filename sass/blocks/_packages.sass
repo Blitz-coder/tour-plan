@@ -28,19 +28,36 @@
     background-color: $dark
     border-radius: 8px
     overflow: hidden
+    color: $light
     &--1
       width: 730px
       grid-column: 1 / span 2
       flex-direction: row
     &-image
-      max-height: 250px
+      height: 250px
+      &--1
+        height: 500px
+        width: 366px
     &-img
-      height: 100%
+      height: 250px
       width: 100%
       object-fit: cover
+      &--1
+        height: 500px
     &-info
+      height: 350px
       padding-top: 30px
       padding-left: 32px
+      padding-right: 21px
+      &--1
+        padding: 46px 21px 0 44px
+        width: 364px
+    &-stars
+      display: flex
+      justify-content: space-between
+      max-width: 48px
+      margin-bottom: 5px
+
     &-title
       margin-top: 0
       margin-bottom: 23px
@@ -49,6 +66,63 @@
       font-weight: bold
       font-size: 18px
       line-height: 23px
+      color: $light
+      &--1
+        margin-bottom: 27px
+    &-about
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 158.6%
+      margin-bottom: 44px
+    &-room
+      margin-bottom: 24px
+      &--1
+        margin-left: 2px
+        margin-bottom: 38px
+    &-text
+      display: flex
+      align-items: center
+      margin-bottom: 11px
+    &-icon
+      margin-right: 14px
+    &-description
+      font-style: normal
+      font-weight: normal
+      font-size: 12px
+      line-height: 15px
+    &-old
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 18px
+      text-decoration-line: line-through
+      // margin-bottom: 5px
+      &--1
+        margin-left: 2px
+    &-sale
+      display: flex
+      justify-content: space-between
+      align-items: center
+      &--1
+        margin-left: 2px
+    &-new
+      font-style: normal
+      font-weight: bold
+      font-size: 24px
+      line-height: 30px
+    &-button
+      padding: 11px 27px 10px 26px
+      font-family: Nunito
+      font-style: normal
+      font-weight: 600
+      font-size: 14px
+      line-height: 19px
+      background: $primary
+      border-radius: 4px
+      border: none
+      outline: none
+      cursor: pointer
       color: $light
     &-offer
       position: absolute
@@ -62,3 +136,9 @@
       background-color: $primary
       color: $light
       border-radius: 0px 4px 4px 0px
+      &--1
+        font-style: normal
+        font-weight: 600
+        font-size: 12px
+        line-height: 15px
+        padding: 8px 23px 7px 11px

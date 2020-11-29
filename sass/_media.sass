@@ -12,6 +12,17 @@
   .card
     width: 230px
     height: 230px
+  .packages
+    max-width: 990px
+    &__card
+      width: 300px
+      height: 500px
+      &-about
+        margin-bottom: 39px
+      &-room--1
+        margin-bottom: 25px
+      &--1
+        width: 630px
 @media(max-width: 992px)
   .container,
   .newsletter-wrapper
@@ -60,6 +71,15 @@
   .card
     width: 340px
     height: 255px
+  .packages
+    max-width: 730px
+    &-wrapper
+      grid-template-columns: repeat(2, 1fr)
+    &__card
+      width: 100%
+      height: 500px
+      &-room--1
+        margin-bottom: 42px
 @media(max-width: 768px) 
   .reviews
     padding-bottom: 60px
@@ -67,6 +87,19 @@
       font-size: 30px
       line-height: 38px
       margin-bottom: 50px
+  .packages
+    max-width: 580px
+    width: 92%
+    &-wrapper
+      grid-template-columns: repeat(2, 1fr)
+    &__card
+      width: 100%
+      height: 500px
+      &-info--1
+        flex-shrink: 0
+        padding: 46px 21px 0 25px
+      &-room--1
+        margin-bottom: 42px
 @media(max-width: 760px)
   .container
     max-width: 576px
@@ -176,7 +209,45 @@
     padding-bottom: 60px
   .card
     width: 100%
-
+  .packages
+    padding-top: 40px
+    padding-bottom: 60px
+    max-width: 480px
+    &-title
+      margin-bottom: 56px
+      font-size: 30px
+    &-wrapper
+      grid-template-columns: 1fr
+      grid-template-rows: repeat(5, 1fr)
+      grid-column-gap: 0
+    &__card
+      grid-column-start: 1
+      width: 100%
+      &-stars
+        display: none
+      &-about
+        display: none
+      &--1
+        flex-direction: column
+      &-image--1
+        height: 250px
+        width: 100%
+      &-img--1
+        height: 250px
+      &-info--1
+        height: 350px
+        padding-top: 30px
+        padding-left: 32px
+        padding-right: 21px
+        width: auto
+      &-room
+        &--1
+          margin-bottom: 24px
+      &-offer
+        &--1
+          font-size: 8px
+          line-height: 10px
+          padding: 4px 9px
 @media(max-width: 320px)
   .container
     max-width: 279px
