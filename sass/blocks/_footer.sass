@@ -41,6 +41,9 @@
     line-height: 160%
     color: inherit
     text-decoration: none
+    transition-duration: 0.5s
+    &:hover
+      color: $primary
   &__form
     display: flex
     align-items: center
@@ -95,6 +98,10 @@
     font-size: 12px
     line-height: 15px
     color: $gray-text
+    transition-duration: 0.3s
+    &:focus
+      border: solid 1px $primary
+      color: $dark
   &__message
     background-color: $light
     border-radius: 4px
@@ -109,6 +116,10 @@
     line-height: 15px
     color: $gray-text
     resize: none
+    transition-duration: 0.3s
+    &:focus
+      border: solid 1px $primary
+      color: $dark
   &__send
     display: flex
     justify-content: space-between
@@ -128,6 +139,9 @@
     border: none
     outline: none
     cursor: pointer
+    transition-duration: 0.5s
+    &:hover
+      background-color: darken($primary, 15%)
   &__info
     font-style: normal
     font-weight: bold
@@ -152,3 +166,6 @@
       color: $light
       margin-left: 5px
       margin-right: 5px
+      transition-duration: 0.5s
+      &:hover
+        color: $primary
