@@ -23,6 +23,9 @@
         margin-bottom: 25px
       &--1
         width: 640px
+  .footer
+    &__input
+      flex-basis: 100%
 @media(max-width: 992px)
   .container,
   .newsletter-wrapper
@@ -80,6 +83,37 @@
       height: 500px
       &-room--1
         margin-bottom: 42px
+  .footer
+    &-wrapper
+      grid-template-columns: repeat(6, 1fr)
+      grid-row-gap: 40px
+    &__input
+      flex-basis: 47%
+    &__logo
+      grid-row: 1 / 2
+      grid-column: span 2
+    &__social
+      &-network
+        grid-row: 1 / 2
+        grid-column: span 4
+        align-self: center
+    &__categories
+      grid-row: 2 / 3
+      grid-column: span 2
+    &__legal
+      grid-column: span 2
+    &__additional
+      grid-column: span 2
+    &__contact
+      &-details
+        grid-column: span 5
+        grid-row: 3
+      &-form
+        grid-column: span 5
+        grid-row: 4
+    &__information
+      &-clear
+        display: none
 @media(max-width: 768px) 
   .reviews
     padding-bottom: 60px
@@ -100,6 +134,14 @@
         padding: 46px 21px 0 25px
       &-room--1
         margin-bottom: 42px
+  .footer
+    padding-top: 73px
+    padding-bottom: 33px
+    &-wrapper
+      margin-bottom: 56px
+    &__input
+      flex-basis: 48%
+
 @media(max-width: 760px)
   .container
     max-width: 576px
@@ -179,6 +221,9 @@
   .card
     width: 48%
     height: 255px
+  .footer
+    &__input
+      flex-basis: 100%
 @media(max-width: 576px)
   .logo
     width: 99px
@@ -248,6 +293,65 @@
           font-size: 8px
           line-height: 10px
           padding: 4px 9px
+  .footer
+    padding-top: 69px
+    padding-bottom: 21px
+    &-wrapper
+      grid-template-columns: 1fr
+      grid-row-gap: 30px
+      margin-bottom: 30px
+
+    &__logo
+      grid-row: 1
+      grid-column: 1
+    &__title
+      &--inline
+        margin-bottom: 20px
+    &__social
+      &-network
+        grid-row: 2
+        grid-column: 1
+        display: flex
+        flex-direction: column
+    &__additional
+      grid-row: 3
+      grid-column: 1
+    &__categories
+      grid-row: 4
+      grid-column: 1
+    &__legal
+      grid-row: 5
+      grid-column: 1
+    &__contact
+      &-details
+        grid-row: 6
+        grid-column: 1
+        max-width: 80%
+      &-form
+        grid-row: 7
+        grid-column: 1
+
+    &__input
+      max-width: 80%
+    &__message
+      max-width: 80%
+
+    &__send
+      flex-direction: column
+      align-items: flex-start
+    &__button
+      order: 10
+    &__info
+      margin-bottom: 15px
+    &__information
+      flex-direction: column
+      align-items: flex-start
+      &-link
+        margin-bottom: 10px
+    &__information
+      &-item
+        margin-left: 1px
+        margin-right: 1px
 @media(max-width: 320px)
   .container
     max-width: 279px

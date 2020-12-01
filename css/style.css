@@ -1160,7 +1160,8 @@ template {
     grid-auto-rows: minmax(40px, min-content);
     -webkit-box-align: start;
         -ms-flex-align: start;
-            align-items: start; }
+            align-items: start;
+    margin-bottom: 95px; }
   .footer__logo {
     width: 166px;
     -ms-grid-row: 1;
@@ -1268,6 +1269,17 @@ template {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
     margin-bottom: 23px; }
+  .footer__send {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%; }
   .footer__button {
     min-width: 160px;
     min-height: 50px;
@@ -1288,6 +1300,30 @@ template {
     font-size: 12px;
     line-height: 15px;
     color: #E0E0E0; }
+  .footer__information {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .footer__information-clear {
+      width: 136px; }
+    .footer__information-cardpay {
+      width: 136px;
+      height: 22px; }
+    .footer__information-item {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 15px;
+      text-decoration: none;
+      color: #ffffff;
+      margin-left: 5px;
+      margin-right: 5px; }
 
 @media (max-width: 1200px) {
   .container {
@@ -1312,7 +1348,10 @@ template {
       .packages__card-room--1 {
         margin-bottom: 25px; }
       .packages__card--1 {
-        width: 640px; } }
+        width: 640px; }
+  .footer__input {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%; } }
 
 @media (max-width: 992px) {
   .container,
@@ -1372,7 +1411,46 @@ template {
       width: 100%;
       height: 500px; }
       .packages__card-room--1 {
-        margin-bottom: 42px; } }
+        margin-bottom: 42px; }
+  .footer-wrapper {
+    -ms-grid-columns: (1fr)[6];
+        grid-template-columns: repeat(6, 1fr);
+    grid-row-gap: 40px; }
+  .footer__input {
+    -ms-flex-preferred-size: 47%;
+        flex-basis: 47%; }
+  .footer__logo {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1 / 2;
+    grid-column: span 2; }
+  .footer__social-network {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1 / 2;
+    grid-column: span 4;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center; }
+  .footer__categories {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2 / 3;
+    grid-column: span 2; }
+  .footer__legal {
+    grid-column: span 2; }
+  .footer__additional {
+    grid-column: span 2; }
+  .footer__contact-details {
+    grid-column: span 5;
+    -ms-grid-row: 3;
+    grid-row: 3; }
+  .footer__contact-form {
+    grid-column: span 5;
+    -ms-grid-row: 4;
+    grid-row: 4; }
+  .footer__information-clear {
+    display: none; } }
 
 @media (max-width: 768px) {
   .reviews {
@@ -1395,7 +1473,15 @@ template {
             flex-shrink: 0;
         padding: 46px 21px 0 25px; }
       .packages__card-room--1 {
-        margin-bottom: 42px; } }
+        margin-bottom: 42px; }
+  .footer {
+    padding-top: 73px;
+    padding-bottom: 33px; }
+    .footer-wrapper {
+      margin-bottom: 56px; }
+    .footer__input {
+      -ms-flex-preferred-size: 48%;
+          flex-basis: 48%; } }
 
 @media (max-width: 760px) {
   .container {
@@ -1492,7 +1578,10 @@ template {
     padding-bottom: 40px; }
   .card {
     width: 48%;
-    height: 255px; } }
+    height: 255px; }
+  .footer__input {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%; } }
 
 @media (max-width: 576px) {
   .logo {
@@ -1563,7 +1652,91 @@ template {
       .packages__card-offer--1 {
         font-size: 8px;
         line-height: 10px;
-        padding: 4px 9px; } }
+        padding: 4px 9px; }
+  .footer {
+    padding-top: 69px;
+    padding-bottom: 21px; }
+    .footer-wrapper {
+      -ms-grid-columns: 1fr;
+          grid-template-columns: 1fr;
+      grid-row-gap: 30px;
+      margin-bottom: 30px; }
+    .footer__logo {
+      -ms-grid-row: 1;
+      grid-row: 1;
+      -ms-grid-column: 1;
+      grid-column: 1; }
+    .footer__title--inline {
+      margin-bottom: 20px; }
+    .footer__social-network {
+      -ms-grid-row: 2;
+      grid-row: 2;
+      -ms-grid-column: 1;
+      grid-column: 1;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; }
+    .footer__additional {
+      -ms-grid-row: 3;
+      grid-row: 3;
+      -ms-grid-column: 1;
+      grid-column: 1; }
+    .footer__categories {
+      -ms-grid-row: 4;
+      grid-row: 4;
+      -ms-grid-column: 1;
+      grid-column: 1; }
+    .footer__legal {
+      -ms-grid-row: 5;
+      grid-row: 5;
+      -ms-grid-column: 1;
+      grid-column: 1; }
+    .footer__contact-details {
+      -ms-grid-row: 6;
+      grid-row: 6;
+      -ms-grid-column: 1;
+      grid-column: 1;
+      max-width: 80%; }
+    .footer__contact-form {
+      -ms-grid-row: 7;
+      grid-row: 7;
+      -ms-grid-column: 1;
+      grid-column: 1; }
+    .footer__input {
+      max-width: 80%; }
+    .footer__message {
+      max-width: 80%; }
+    .footer__send {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: flex-start; }
+    .footer__button {
+      -webkit-box-ordinal-group: 11;
+          -ms-flex-order: 10;
+              order: 10; }
+    .footer__info {
+      margin-bottom: 15px; }
+    .footer__information {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: flex-start; }
+      .footer__information-link {
+        margin-bottom: 10px; }
+    .footer__information-item {
+      margin-left: 1px;
+      margin-right: 1px; } }
 
 @media (max-width: 320px) {
   .container {
