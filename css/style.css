@@ -338,7 +338,8 @@ template {
     padding-top: 40px;
     padding-bottom: 40px; }
     .navbar-top__menu-button {
-      display: none; }
+      display: none;
+      outline: none; }
   .navbar__search {
     margin-right: auto;
     margin-left: 108px; }
@@ -364,6 +365,8 @@ template {
       text-transform: uppercase;
       font-size: 14px;
       line-height: 18px; }
+    .navbar-menu__item--mobile--visible {
+      display: none; }
 
 .logo {
   width: 177px;
@@ -1533,8 +1536,51 @@ template {
   .container {
     max-width: 576px;
     width: 92%; }
-  .navbar__search, .navbar-menu, .navbar__user {
+  body {
+    padding-top: 78px; }
+  .navbar__mobile--fixed {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 99; }
+  .navbar__user--mobile--hidden, .navbar__search--mobile--hidden {
     display: none; }
+  .navbar__user--mobile--visible, .navbar__search--mobile--visible {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .navbar__search {
+    margin-bottom: 16px; }
+  .navbar__user {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .navbar-bottom {
+    display: none;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 78px;
+    padding-top: 9px; }
+    .navbar-bottom--visible {
+      display: block; }
+  .navbar-menu {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .navbar-menu__item {
+      margin-bottom: 20px; }
+      .navbar-menu__item--mobile {
+        margin-bottom: 17px; }
+        .navbar-menu__item--mobile--visible {
+          display: block; }
   .menu-button {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1559,6 +1605,14 @@ template {
       width: 16px;
       height: 1px;
       background-color: #333333; }
+  .user__name--light {
+    color: #ffffff;
+    margin-left: 0;
+    margin-top: 10px;
+    margin-bottom: 7px; }
+  .search__input {
+    width: 245px;
+    margin-bottom: 39px; }
   .stars {
     -ms-flex-preferred-size: auto;
         flex-basis: auto; }

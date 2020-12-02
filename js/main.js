@@ -14,7 +14,7 @@ var hotelSlider = new Swiper('.hotel-slider', {
     enabled: true,
     onlyInViewport: false,
   },
-})
+});
 
 var reviewsSlider = new Swiper('.reviews-slider', {
   // Optional parameters
@@ -25,5 +25,10 @@ var reviewsSlider = new Swiper('.reviews-slider', {
     nextEl: '.reviews-slider__button--next',
     prevEl: '.reviews-slider__button--prev',
   },
+});
 
-})
+var menuButton = document.querySelector(".menu-button");
+menuButton.addEventListener('click', function () {
+  console.log('Клик по кнопке');
+  document.querySelector(".navbar-bottom").classList.toggle("navbar-bottom--visible");
+});
