@@ -344,7 +344,8 @@ template {
     margin-right: auto;
     margin-left: 108px; }
   .navbar-bottom {
-    background-color: #0A223D; }
+    background-color: #0A223D;
+    overflow: auto; }
   .navbar-menu {
     list-style-type: none;
     margin: 0;
