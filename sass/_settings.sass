@@ -9,3 +9,23 @@ body
   margin: auto
 img
   max-width: 100%
+
+input
+  &:focus
+    border: solid 1px $primary
+    color: $text-color
+a
+  transition-duration: 0.3s
+  &:hover
+    color: $primary
+button
+  transition-duration: 0.3s
+  outline: none
+  cursor: pointer
+  &:hover
+    background-color: darken($primary, 15%)
+textarea
+  transition-duration: 0.3s
+  &:focus
+    border: solid 1px $primary
+    color: $text-color
