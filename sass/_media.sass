@@ -141,7 +141,11 @@
       margin-bottom: 56px
     &__input
       flex-basis: 48%
-
+  .modal
+    &__dialog
+      overflow: auto
+      position: fixed
+      height: 100%
 @media(max-width: 760px)
   .container
     max-width: 576px
@@ -202,6 +206,8 @@
         width: 16px
         height: 1px
         background-color: $text-color
+      &:hover
+        background-color: transparent
   .user
     &__name
       &--light
@@ -272,6 +278,7 @@
   .footer
     &__input
       flex-basis: 100%
+
 @media(max-width: 576px)
   .logo
     width: 99px
@@ -400,6 +407,19 @@
       &-item
         margin-left: 1px
         margin-right: 1px
+  .modal
+    &__dialog
+      max-width: 90%
+      padding-left: 30px
+      padding-right: 30px
+      padding-bottom: 18px
+    &__button
+      margin-bottom: 7px
+      margin-right: 15px
+    &__info
+      margin-bottom: 7px
+      margin-top: 7px
+
 @media(max-width: 320px)
   .container
     max-width: 279px
