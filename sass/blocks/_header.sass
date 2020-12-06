@@ -18,7 +18,7 @@
   &-menu
     list-style-type: none
     margin: 0
-    padding: 31px 0 30px 0
+    padding: 31px 1px 30px 1px
     display: flex
     align-items: center
     justify-content: space-between
@@ -29,7 +29,9 @@
       text-transform: uppercase
       font-size: 14px
       line-height: 18px
+      letter-spacing: 0.2px
     &__item
+
       &--mobile
         &--visible
           display: none
@@ -66,6 +68,10 @@
     outline: none
     background-color: $primary
     cursor: pointer
+    &-icon
+      padding-top: 3px
+      padding-left: 1px
+
 .user
   display: flex
   align-items: center
@@ -75,8 +81,10 @@
     height: 40px
     border-radius: 50%
     object-fit: cover
+
   &__name
     margin-left: 18px
     font-size: 14px
     line-height: 18px
     color: $text-color
+    margin-top: 3px
