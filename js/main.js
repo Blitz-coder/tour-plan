@@ -55,6 +55,7 @@ $(document).ready(function () {
     var modalDialog = $('.modal__dialog');
     modalOverlay.addClass('modal__overlay--visible');
     modalDialog.addClass('modal__dialog--visible');
+    document.getElementsByTagName("body")[0].style.overflow = "hidden";
   }
 
   function closeModal(event) {
@@ -63,7 +64,33 @@ $(document).ready(function () {
     var modalDialog = $('.modal__dialog');
     modalOverlay.removeClass('modal__overlay--visible');
     modalDialog.removeClass('modal__dialog--visible');
+    document.getElementsByTagName("body")[0].style.overflow = "auto";
   }
+
+  // Обработка форм
+  $(".form").each(function () {
+    $(this).validate({
+      errorClass: "invalide",
+      messages: {
+        name: {
+          required: "Please enter a name",
+          minlength: "Name is too short",
+        },
+        email: {
+          required: "Please enter your email",
+          email: "Use format name@domain.com",
+        },
+        phone: {
+          required: "Phone is required.",
+        },
+      },
+    });
+  });
+
+
+  $(document).ready(function () {
+    $('input[name="phone"]').mask('+7 (000) 000-00-00');
+  });
 
 
 });

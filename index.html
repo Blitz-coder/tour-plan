@@ -19,7 +19,7 @@
   <header class="navbar navbar__mobile-fixed">
     <div class="container">
       <div class="navbar-top">
-        <a href="#" class="logo">
+        <a href="index.html" class="logo">
           <img src="img/horizontal-logo.svg" alt="Logo: Best Tour Plan" class="logo__image">
         </a>
         <form action="#" class="search navbar__search navbar__search--mobile--hidden">
@@ -411,16 +411,18 @@
   </section>
   <!-- /.packages -->
 
-
-
   <section class="newsletter">
     <div class="newsletter-wrapper">
-      <h2 class="newsletter-title newsletter__title">subscribe to our <span
-          class="newsletter-title__strong">Newsletter</span></h2>
+      <div class="newsletter__title-group">
+        <h2 class="newsletter-title newsletter__title">subscribe to our <span
+            class="newsletter-title__strong">Newsletter</span></h2>
+      </div>
+      <form action="send.php" method="POST" class="subscribe form">
+        <div class="subscribe__group">
+          <input type="email" class="subscribe__input" placeholder="Your email address" name="email" required>
+        </div>
+        <button class="subscribe__button insubscribe">Send</button>
 
-      <form action="send.php" method="POST" class="subscribe newsletter__subscribe">
-        <input type="text" class="subscribe__input" placeholder="Your email address" name="email">
-        <button class="subscribe__button">Send</button>
       </form>
 
     </div>
@@ -570,10 +572,16 @@
     <!-- /.container -->
   </section>
   <!-- /.activities -->
+
   <footer class="footer">
     <div class="container">
       <div class="footer-wrapper">
-        <img src="img/vertical-logo.svg" alt="Logo: Best Tour Plan" class="logo footer__logo">
+
+        <a href="index.html" class="logo footer__logo">
+          <img src="img/vertical-logo.svg" alt="Logo: Best Tour Plan">
+
+        </a>
+
         <div class="footer__list footer__categories">
           <h3 class="footer__title footer__title-categories">All categories</h3>
           <ul class="footer__ul">
@@ -659,9 +667,15 @@
         <!-- /.footer__contact-details -->
         <div class="footer__contact-form">
           <h3 class="footer__title footer__title--mb-3">Send us a message</h3>
-          <form action="send.php" method="POST" class="footer__form">
-            <input type="text" class="input footer__input" placeholder="Your Full Name*" name="name">
-            <input type="text" class="input footer__input" placeholder="Phone Number*" name="phone">
+          <form action="send.php" method="POST" class="footer__form form">
+            <div class="footer__input-group">
+              <input type="text" class="input footer__input" placeholder="Your Full Name*" name="name" required
+                minlength="2">
+            </div>
+            <div class="footer__input-group">
+              <input type="tel" class="input footer__input" placeholder="Phone Number*" name="phone" required>
+            </div>
+
             <textarea class="message footer__message" placeholder="Message" name="message"></textarea>
             <div class="footer__send">
               <button class="button footer__button">Send</button>
@@ -694,10 +708,10 @@
       </a>
 
       <h3 class="modal__title modal__title--mb-3">Booking</h3>
-      <form action="send.php" method="POST" class="modal__form">
-        <input type="text" class="input modal__input" placeholder="Your Full Name*" name="name">
-        <input type="text" class="input modal__input" placeholder="Phone Number*" name="phone">
-        <input type="text" class="input modal__input" placeholder="Email*" name="email">
+      <form action="send.php" method="POST" class="modal__form form">
+        <input type="text" class="input modal__input" placeholder="Your Full Name*" name="name" required minlength="2">
+        <input type="tel" class="input modal__input" placeholder="Phone Number*" name="phone" required>
+        <input type="email" class="input modal__input" placeholder="Email*" name="email" required>
         <textarea class="message modal__message" placeholder="Message" name="message"></textarea>
         <button class="button modal__button">Send</button>
         <span class="modal__info">* Required Fields</span>
@@ -712,6 +726,8 @@
   <script src="js/swiper-bundle.min.js"></script>
   <script async="" src="//cdn.iframe.ly/embed.js"></script>
   <!-- <script async src="js/preload.js" charset="utf-8"></script> -->
+  <script defer src="js/jquery.validate.min.js"></script>
+  <script defer src="js/jquery.mask.min.js"></script>
   <script defer src="js/main.js"></script>
 </body>
 
