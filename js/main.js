@@ -81,16 +81,16 @@ $(document).ready(function () {
           email: "Use format name@domain.com",
         },
         phone: {
-          required: "Phone is required.",
+          required: "Phone is required",
         },
       },
     });
   });
 
 
-  $(document).ready(function () {
-    $('input[name="phone"]').mask('+7 (000) 000-00-00');
-  });
+
+  $('input[name="phone"]').mask('+7 (000) 000-00-00');
+
 
 
 });
