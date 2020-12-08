@@ -1074,8 +1074,7 @@ template {
     font-style: normal;
     font-weight: 300;
     font-size: 14px;
-    line-height: 18px;
-    color: #bdbdbd; }
+    line-height: 18px; }
   .subscribe__button {
     position: absolute;
     top: 0;
