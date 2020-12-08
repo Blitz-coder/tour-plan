@@ -12,6 +12,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;600;800&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/aos.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -19,17 +20,19 @@
   <header class="navbar navbar__mobile-fixed">
     <div class="container">
       <div class="navbar-top">
-        <a href="index.html" class="logo">
+        <a href="index.html" class="logo" data-aos="fade-down" data-aos-duration="1000">
           <img src="img/horizontal-logo.svg" alt="Logo: Best Tour Plan" class="logo__image">
         </a>
-        <form action="#" class="search navbar__search navbar__search--mobile--hidden">
+        <form action="#" class="search navbar__search navbar__search--mobile--hidden" data-aos="fade-down"
+          data-aos-duration="1200">
           <input type="text" class="search__input" placeholder="Search Location">
           <button class="search__button">
             <img class="search__button-icon" src="img/search.svg" alt="Icon: search">
           </button>
         </form>
 
-        <a href="#" class="user navbar__user navbar__user--mobile--hidden">
+        <a href="#" class="user navbar__user navbar__user--mobile--hidden" data-aos="fade-down"
+          data-aos-duration="1400">
           <img src="img/user-avatar.jpg" alt="Avatar: Nathan" class="user__avatar">
           <span class="user__name">Nathan</span>
         </a>
@@ -153,7 +156,7 @@
         <!-- /.swiper-container -->
 
         <div class="hotel-right">
-          <div class="booking">
+          <div class="booking" data-aos="zoom-in" data-aos-duration="1500">
             <div class="booking__info">
               <div class="booking__price">
                 <span class="booking__start">price starts as</span>
@@ -207,7 +210,7 @@
     <h2 class="packages-title">Other Packages</h2>
     <div class="packages-wrapper">
 
-      <div class="packages__card packages__card--1">
+      <div class="packages__card packages__card--1" data-aos="fade-up" data-aos-duration="1000">
         <!-- блок с картинкой -->
         <div class="packages__card-image packages__card-image--1">
           <img src="img/packages/card-1.jpg" alt="Photo: LUX* Belle Mare"
@@ -265,10 +268,8 @@
       <!-- packages__card 1 -->
 
 
-
-
       <!-- card 2 -->
-      <div class="packages__card">
+      <div class="packages__card" data-aos="fade-up" data-aos-duration="1000">
         <!-- 2 card ontent -->
         <div class="packages__card-image">
           <img src="img/packages/card-2.jpg" alt="Photo: LUX* Belle Mare" class="packages__card-img">
@@ -303,7 +304,7 @@
       <!-- packages__card 2 -->
 
       <!-- card 3 -->
-      <div class="packages__card">
+      <div class="packages__card" data-aos="fade-up" data-aos-duration="1000">
         <!-- 3 card ontent -->
         <div class="packages__card-image">
           <img src="img/packages/card-3.jpg" alt="Photo: White Palace" class="packages__card-img">
@@ -338,7 +339,7 @@
       <!-- packages__card 3 -->
 
       <!-- card 4       -->
-      <div class="packages__card">
+      <div class="packages__card" data-aos="fade-up" data-aos-duration="1000">
         <!-- 4 card ontent -->
         <div class="packages__card-image">
           <img src="img/packages/card-4.jpg" alt="Photo: Luxury Place" class="packages__card-img">
@@ -373,7 +374,7 @@
       <!-- /.packages__card 4 -->
 
       <!-- card 5       -->
-      <div class="packages__card">
+      <div class="packages__card" data-aos="fade-up" data-aos-duration="1000">
         <!-- 5 card ontent -->
         <div class="packages__card-image">
           <img src="img/packages/card-5.jpg" alt="Photo: Hotel Five Star" class="packages__card-img">
@@ -414,10 +415,10 @@
   <section class="newsletter">
     <div class="newsletter-wrapper">
       <div class="newsletter__title-group">
-        <h2 class="newsletter-title newsletter__title">subscribe to our <span
-            class="newsletter-title__strong">Newsletter</span></h2>
+        <h2 class="newsletter-title newsletter__title" data-aos="fade-up" data-aos-duration="1000">subscribe to our
+          <span class="newsletter-title__strong">Newsletter</span></h2>
       </div>
-      <form action="send.php" method="POST" class="subscribe form">
+      <form action="send.php" method="POST" class="subscribe form" data-aos="fade-up" data-aos-duration="1000">
         <div class="subscribe__group">
           <input type="email" class="subscribe__input" placeholder="Your email address" name="email" required>
         </div>
@@ -536,21 +537,21 @@
       <h2 class="activities__title">Other Activities</h2>
       <div class="activities-wrapper">
 
-        <div class="card activities__card">
+        <div class="card activities__card" data-aos="fade-up" data-aos-duration="700">
           <img src="img/activity-1.jpg" alt="The curious corner of chamarel" class="card__image">
           <h3 class="card__title">The curious corner&nbspof chamarel</h3>
           <button class="card__button">Book Now</button>
         </div>
         <!-- /.card -->
 
-        <div class="card activities__card">
+        <div class="card activities__card" data-aos="fade-up" data-aos-duration="1000">
           <img src="img/activity-2.jpg" alt="Gymkhana club golf course" class="card__image">
           <h3 class="card__title">Gymkhana club golf&nbsp course</h3>
           <button class="card__button">Book Now</button>
         </div>
         <!-- /.card -->
 
-        <div class="card activities__card">
+        <div class="card activities__card" data-aos="fade-up" data-aos-duration="1300">
           <img src="img/activity-3.jpg" alt="Tamarind falls hiking trip - full day
 " class="card__image">
           <h3 class="card__title">Tamarind falls hiking <br>trip - full day</h3>
@@ -558,7 +559,7 @@
         </div>
         <!-- /.card -->
 
-        <div class="card activities__card">
+        <div class="card activities__card" data-aos="fade-up" data-aos-duration="1600">
           <img src="img/activity-4.jpg" alt="The blue marine discovery quest" class="card__image">
           <h3 class="card__title">The blue marine discovery&nbsp quest</h3>
           <button class="card__button">Book Now</button>
@@ -576,7 +577,7 @@
     <div class="container">
       <div class="footer-wrapper">
 
-        <a href="index.html" class="logo footer__logo">
+        <a href="index.html" class="logo footer__logo" data-aos="fade-up" data-aos-duration="1600">
           <img src="img/vertical-logo.svg" alt="Logo: Best Tour Plan">
 
         </a>
@@ -664,7 +665,7 @@
 
         </div>
         <!-- /.footer__contact-details -->
-        <div class="footer__contact-form">
+        <div class="footer__contact-form" data-aos="fade-up" data-aos-duration="1600">
           <h3 class="footer__title footer__title--mb-3">Send us a message</h3>
           <form action="send.php" method="POST" class="footer__form form">
             <div class="footer__input-group">
@@ -738,6 +739,7 @@
   <!-- <script async src="js/preload.js" charset="utf-8"></script> -->
   <script defer src="js/jquery.validate.min.js"></script>
   <script defer src="js/jquery.mask.min.js"></script>
+  <script defer src="js/aos.js"></script>
   <script defer src="js/main.js"></script>
 </body>
 
