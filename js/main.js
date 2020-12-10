@@ -21,6 +21,7 @@ $(document).ready(function () {
   var reviewsSlider = new Swiper('.reviews-slider', {
     // Optional parameters
     loop: true,
+    autoHeight: true,
 
     // Navigation arrows
     navigation: {
@@ -88,10 +89,36 @@ $(document).ready(function () {
   });
 
 
-
-
   $('input[name="phone"]').mask('+7 (999) 999-99-99');
 
   AOS.init();
+
+  $(function () {
+    $("img.lazy").Lazy();
+  });
+
+
+  let map_container = document.getElementById('map_container');
+  let options_map = {
+    once: true,
+    passive: true,
+    capture: true
+  };
+  map_container.addEventListener('click', start_lazy_map, options_map);
+  map_container.addEventListener('mouseover', start_lazy_map, options_map);
+  map_container.addEventListener('touchstart', start_lazy_map, options_map);
+  map_container.addEventListener('touchmove', start_lazy_map, options_map);
+
+  let map_loaded = false;
+
+  function start_lazy_map() {
+    if (!map_loaded) {
+      let map_block = document.getElementById('ymap_lazy');
+      map_loaded = true;
+      map_block.setAttribute('src', map_block.getAttribute('data-src'));
+      map_block.removeAttribute('data-src');
+    }
+  }
+
 
 });

@@ -9,7 +9,6 @@ body
   margin: auto
 img
   max-width: 100%
-
 input
   background-color: $light
   border-radius: 4px
@@ -18,19 +17,12 @@ input
   height: 50px
   outline: none
   transition-duration: 0.3s
-  &:focus
-    border: solid 1px $primary
-    color: $text-color
 a
   transition-duration: 0.3s
-  &:hover
-    color: $primary
 button
   transition-duration: 0.3s
   outline: none
   cursor: pointer
-  &:hover
-    background-color: darken($primary, 15%)
 .message
   background-color: $light
   border-radius: 4px
@@ -38,9 +30,6 @@ button
   border: none
   outline: none
   transition-duration: 0.3s
-  &:focus
-    border: solid 1px $primary
-    color: $text-color
 .button
   min-width: 160px
   min-height: 50px
@@ -61,22 +50,46 @@ button
   font-weight: normal
   font-size: 11px
   line-height: 12px
-
 #name
   &-error
     position: absolute
     top: 3px
-    left: 4px
+    left: 23px
     z-index: 100
 #phone
   &-error
     position: absolute
     top: 3px
-    left: 4px
+    left: 23px
     z-index: 100
 #email
   &-error
     position: absolute
     top: 3px
-    left: 4px
+    left: 23px
     z-index: 100
+
+@media(min-width: 992px)
+  input
+    &:focus
+      border: solid 1px $primary
+      color: $text-color
+  a
+    &:hover
+      color: $primary
+  button
+    &:hover
+      background-color: darken($primary, 15%)
+  .message
+    &:focus
+      border: solid 1px $primary
+      color: $text-color
+  .footer
+    &-wrapper
+      &__information
+        &:hover
+          color: $primary
+    &__link
+      &-icon
+        &:hover
+          transform: scale(1.4)
