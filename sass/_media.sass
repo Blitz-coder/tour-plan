@@ -163,7 +163,7 @@
     &__dialog
       overflow: auto
       position: fixed
-      max-height: 100%
+      max-height: 98%
   .navbar
     &__search
       margin-right: 73px
@@ -199,6 +199,9 @@
     &__logo
       width: 98px
       margin-top: 0
+      &-img
+        margin-top: 30px
+        margin-left: -1px
     &-wrapper
       grid-template-columns: minmax(min-content, 98px) minmax(min-content, 40px) minmax(min-content, 300px) minmax(min-content, 200px) minmax(min-content, 100px) minmax(min-content, 100px)
       grid-row-gap: 47px
@@ -222,10 +225,16 @@
     &__contact
       &-form
         margin-top: -8px
+    &__text
+      margin-bottom: 20px
     &__title
       &--mb
         &-3
-          margin-bottom: 27px
+          margin-bottom: 25px
+      &-contact
+        margin-top: 15px
+      &-form
+        margin-top: 3px
     &__form
       margin-top: 35px
       max-width: 539px
@@ -234,6 +243,9 @@
         flex-basis: 47.1%
     &__button
       padding: 17px
+    &__information
+      &-item
+        margin-left: 2px
 @media(max-width: 760px)
   .container
     max-width: 576px
@@ -290,6 +302,7 @@
       border: none
       background-color: #fff
       cursor: pointer
+      margin-bottom: -6px
       &__line
         width: 16px
         height: 1px
@@ -333,6 +346,7 @@
   .booking
     width: 100%
     height: 213px
+    margin-bottom: 30px
   .map
     width: 100%
     background-image: url(../img/big-map.jpg)
@@ -440,9 +454,12 @@
       font-size: 18px
       line-height: 23px
       margin-bottom: 42px
+    &-slider
+      &__text
+        text-align: left
   .activities
     padding-top: 28px
-    padding-bottom: 36px
+    padding-bottom: 60px
     &__title
       font-weight: bold
       font-size: 18px
@@ -454,12 +471,16 @@
     width: 100%
     &:nth-child(1)
       order: 1
+      margin-bottom: 20px
     &:nth-child(2)
       order: 3
+      margin-bottom: 20px
     &:nth-child(3)
       order: 2
+      margin-bottom: 28px
     &:nth-child(4)
       order: 4
+      margin-bottom: 0
   .footer
     padding-top: 40px
     padding-bottom: 21px
@@ -561,9 +582,14 @@
   .booking
     height: 210px
   .newsletter
-    padding: 67px 0 64px 7px
+    padding: 66px 0 64px 6px
+    &__title
+      margin-bottom: 24px
+    &-title
+      &__strong
+        margin-top: 2px
   .subscribe
-    max-width: 98%
+    max-width: 97%
   .reviews
     padding-top: 40px
     padding-bottom: 50px
@@ -571,6 +597,8 @@
       max-width: 245px
       margin: 0 auto 42px auto
     &-slider
+      &__rating
+        margin-left: 0
       &__username
         margin-left: 0
       &__button
@@ -578,7 +606,19 @@
           margin-left: -92px
         &--next
           margin-right: -87px
+  .activities
+    padding-top: 31px
+    &__card
+      padding: 24px 49px 24px 25px
+  .card
+    margin-bottom: 20px
+    width: 280px
   .footer
+    padding-top: 39px
+    &__tel-link
+      display: inline-block
+    &-wrapper
+      margin-bottom: 26px
     &__icon-wrapper
       margin-left: 0px
       min-width: 30px
@@ -588,13 +628,28 @@
           margin-bottom: 22px
     &__contact
       &-form
-        margin-top: 12px
+        margin-top: 15px
+        margin-left: -2px
     &__form
       margin-top: 0
     &__title
+      &-categories
+        margin-top: 1px
+      &-contact
+        margin-top: 17px
       &--mb
         &-3
-          margin-bottom: 28px
+          margin-bottom: 26px
       &-form
         margin-top: -9px
         margin-bottom: 15px
+    &__text
+      margin-bottom: 17px
+    &__icon-wrapper
+      margin-left: -2px
+      min-width: 32px
+    &__information-item
+      margin-left: 0px
+      margin-right: 4px
+  .booking
+    margin-bottom: 20px

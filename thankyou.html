@@ -5,31 +5,33 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Best Tour Plan - Thank you</title>
+  <title>Thanks for message - Best Tour Plan</title>
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <link rel="icon" href="favicon.ico" type="image/x-icon">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;600;800&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="css/swiper-bundle.min.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/swiper-bundle.min.css" media="screen and (min-width: 300px)">
+  <link rel="stylesheet" href="css/aos.css" media="screen and (min-width: 300px)">
+  <link rel="stylesheet" href="css/style.css" media="screen and (min-width: 300px)">
 </head>
 
 <body>
   <header class="navbar navbar__mobile-fixed">
     <div class="container">
       <div class="navbar-top">
-        <a href="index.html" class="logo">
+        <a href="index.html" class="logo" data-aos="zoom-in" data-aos-duration="1000">
           <img src="img/horizontal-logo.svg" alt="Logo: Best Tour Plan" class="logo__image">
         </a>
-        <form action="#" class="search navbar__search navbar__search--mobile--hidden">
+        <form action="#" class="search navbar__search navbar__search--mobile--hidden" data-aos="zoom-in"
+          data-aos-duration="1200">
           <input type="text" class="search__input" placeholder="Search Location">
           <button class="search__button">
             <img class="search__button-icon" src="img/search.svg" alt="Icon: search">
           </button>
         </form>
 
-        <a href="#" class="user navbar__user navbar__user--mobile--hidden">
+        <a href="#" class="user navbar__user navbar__user--mobile--hidden" data-aos="zoom-in" data-aos-duration="1400">
           <img src="img/user-avatar.jpg" alt="Avatar: Nathan" class="user__avatar">
           <span class="user__name">Nathan</span>
         </a>
@@ -113,7 +115,8 @@
 
       </div>
       <!-- /.hotel-info -->
-      <a href="index.html"><button class="button hotel-thankyou__button">Back to the main page</button></a>
+      <a data-aos="fade-up" href="index.html"><button class="button hotel-thankyou__button">Back to the main
+          page</button></a>
 
     </div>
     <!-- /.container -->
@@ -127,8 +130,8 @@
     <div class="container">
       <div class="footer-wrapper">
 
-        <a href="index.html" class="logo footer__logo">
-          <img src="img/vertical-logo.svg" alt="Logo: Best Tour Plan">
+        <a href="index.html" class="logo footer__logo" data-aos="fade-up" data-aos-duration="1600">
+          <img class="footer__logo-img" src="img/vertical-logo.svg" alt="Logo: Best Tour Plan">
 
         </a>
 
@@ -199,31 +202,32 @@
             <li class="footer__item footer__item--mb-2 footer__item-phone">
               <div class="footer__icon-wrapper"><img class="footer__icon footer__icon-phone"
                   src="img/contact-phone-call.svg" alt="icon: phone"></div>
-              <p class="footer__phone">Tel (business hours) : <a href="tel: 269 1500" class="footer__tel-link">269
+              <p class="footer__phone">Tel (business hours) : <a href="tel:2691500" class="footer__tel-link">269
                   1500</a><br>
-                Tel (hotline) Monday - Saturday: <a href="tel: 52-56-61-38" class="footer__tel-link">52-56-61-38</a>
+                Tel (hotline) Monday - Saturday: <a href="tel:52566138" class="footer__tel-link">52-56-61-38</a>
                 (08:00 am – 20:00 pm)<br>
-                Tel (hotline) Sunday: <a href="tel: 52-56-61-38" class="footer__tel-link">52-56-61-38</a> (08:00 am –
+                Tel (hotline) Sunday: <a href="tel:52566138" class="footer__tel-link">52-56-61-38</a> (08:00 am –
                 14:00 pm)</p>
             </li>
             <li class="footer__item footer__item--mb-2">
               <div class="footer__icon-wrapper"><img class="footer__icon footer__icon-email" src="img/email.svg"
                   alt="icon: email"></div>
-              <a href="mailto: 9cherly.lawson@example.com" class="footer__tel-link">9cherly.lawson@example.com</a>
+              <a href="mailto:cherly.lawson@example.com" class="footer__tel-link">cherly.lawson@example.com</a>
             </li>
           </ul>
 
         </div>
         <!-- /.footer__contact-details -->
-        <div class="footer__contact-form">
-          <h3 class="footer__title footer__title--mb-3">Send us a message</h3>
+        <div class="footer__contact-form" data-aos="fade-up" data-aos-duration="1600">
+          <h3 class="footer__title footer__title--mb-3 footer__title-form">Send us a message</h3>
           <form action="send.php" method="POST" class="footer__form form">
             <div class="footer__input-group">
               <input type="text" class="input footer__input" placeholder="Your Full Name*" name="name" required
                 minlength="2">
             </div>
             <div class="footer__input-group">
-              <input type="tel" class="input footer__input" placeholder="Phone Number*" name="phone" required>
+              <input type="tel" class="input footer__input" placeholder="Phone Number*" name="phone" required
+                minlength="18">
             </div>
 
             <textarea class="message footer__message" placeholder="Message" name="message"></textarea>
@@ -250,13 +254,14 @@
     <!-- /.container -->
   </footer>
 
-
   <script src="js/jquery-3.5.1.min.js"></script>
-  <script src="js/swiper-bundle.min.js"></script>
-  <script async="" src="//cdn.iframe.ly/embed.js"></script>
-  <!-- <script async src="js/preload.js" charset="utf-8"></script> -->
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.10/jquery.lazy.min.js">
+  </script>
+  <!-- <script defer src="js/jquery.lazy.min.js"></script> -->
+  <script defer src="js/swiper-bundle.min.js"></script>
   <script defer src="js/jquery.validate.min.js"></script>
   <script defer src="js/jquery.mask.min.js"></script>
+  <script defer src="js/aos.js"></script>
   <script defer src="js/main.js"></script>
 </body>
 
