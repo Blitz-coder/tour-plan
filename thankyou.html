@@ -11,9 +11,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;600;800&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="css/swiper-bundle.min.css" media="screen and (min-width: 300px)">
-  <link rel="stylesheet" href="css/aos.css" media="screen and (min-width: 300px)">
-  <link rel="stylesheet" href="css/style.css" media="screen and (min-width: 300px)">
+  <link rel="stylesheet" href="css/swiper-bundle.min.css" media="screen and (min-width: 100px)">
+  <link rel="stylesheet" href="css/aos.css" media="screen and (min-width: 100px)">
+  <link rel="stylesheet" href="css/style.css" media="screen and (min-width: 100px)">
 </head>
 
 <body>
@@ -108,15 +108,20 @@
             <h1 class="hotel-name hotel-info__name">Thanks! Your message has been sent...</h1>
 
           </div>
-          <p class="hotel-description hotel-info__description">Our manager will contact you within 5 minutes!</p>
+          <h2 class="hotel-description hotel-info__description">Our manager will contact you within 5 minutes!</h2>
         </div>
         <!-- /.hotel-info__text -->
 
 
       </div>
       <!-- /.hotel-info -->
-      <a data-aos="fade-up" href="index.html"><button class="button hotel-thankyou__button">Back to the main
-          page</button></a>
+
+      <form action="index.html" method="GET">
+        <button class="button main-button" type="submit">Back to the main
+          page</button>
+      </form>
+      <!-- <a data-aos="fade-up" href="index.html"><button class="button main-button">Back to the main
+          page</button></a> -->
 
     </div>
     <!-- /.container -->
@@ -203,10 +208,11 @@
               <div class="footer__icon-wrapper"><img class="footer__icon footer__icon-phone"
                   src="img/contact-phone-call.svg" alt="icon: phone"></div>
               <p class="footer__phone">Tel (business hours) : <a href="tel:2691500" class="footer__tel-link">269
-                  1500</a><br>
-                Tel (hotline) Monday - Saturday: <a href="tel:52566138" class="footer__tel-link">52-56-61-38</a>
+                  1500</a><br>Tel (hotline) Monday - Saturday: <a href="tel:52566138"
+                  class="footer__tel-link">52-56-61-38</a>
                 (08:00 am – 20:00 pm)<br>
-                Tel (hotline) Sunday: <a href="tel:52566138" class="footer__tel-link">52-56-61-38</a> (08:00 am –
+                Tel (hotline) Sunday: <a href="tel:52566138" class="footer__tel-link">52-56-61-38</a>
+                (08:00 am –
                 14:00 pm)</p>
             </li>
             <li class="footer__item footer__item--mb-2">
@@ -219,7 +225,7 @@
         </div>
         <!-- /.footer__contact-details -->
         <div class="footer__contact-form" data-aos="fade-up" data-aos-duration="1600">
-          <h3 class="footer__title footer__title--mb-3 footer__title-form">Send us a message</h3>
+          <h3 class="footer__title footer__title-form">Send us a message</h3>
           <form action="send.php" method="POST" class="footer__form form">
             <div class="footer__input-group">
               <input type="text" class="input footer__input" placeholder="Your Full Name*" name="name" required

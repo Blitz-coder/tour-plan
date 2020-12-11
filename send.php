@@ -11,32 +11,34 @@ $phone = $_POST['phone'];
 $message = $_POST['message'];
 
 // Формирование самого письма
-$title = "Новое обращение с Best Tour Plan";
+$title = "New message from Best Tour Plan";
 $body = "
-<h2>Новое обращение</h2>
-<b>Имя:</b> $name<br>
-<b>Телефон:</b> $phone<br><br>
-<b>Сообщение:</b><br>$message
+<h2>New message</h2>
+<b>Name:</b> $name<br>
+<b>Phone:</b> $phone<br><br>
+<b>Message:</b><br> $message<br><br>
+<p>Sent from footer form.</p>
 ";
 
 // если указан только email
 if ($email) {
-  $title = "Подписка на новости Best Tour Plan";
+  $title = "New subscriber from Best Tour Plan";
   $body = "
-    <h2>Подписка на новости</h2>
-    <b>mail:</b> $email<br>
+    <h2>Subscribe to news</h2>
+    <b>Email:</b> $email<br>
   ";
 }
 
 // если указан email и телефон - модальное окно
 if (($email) and ($phone)) {
-  $title = "Новое обращение с Best Tour Plan";
+  $title = "New message from Best Tour Plan";
   $body = "
-    <h2>Новое обращение с Best Tour Plan</h2>
-    <b>Имя:</b> $name<br>
-    <b>Телефон:</b> $phone<br>
+    <h2>New message</h2>
+    <b>Name:</b> $name<br>
+    <b>Phone:</b> $phone<br>
     <b>Email:</b> $email<br><br>
-    <b>Сообщение:</b><br>$message
+    <b>Message:</b><br> $message<br><br>
+    <p>Sent from modal form.</p>
 ";
 }
 

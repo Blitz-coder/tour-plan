@@ -73,7 +73,7 @@
     &-about
       height: 182px
       margin-bottom: 17px
-      overflow: hidden
+      overflow: auto
     &-text
       &-1
         font-style: normal
@@ -120,6 +120,10 @@
       font-size: 24px
       line-height: 30px
     &-button
+      max-width: 120px
+      white-space: nowrap
+      overflow: hidden
+      text-overflow: ellipsis
       padding: 11px 27px 10px 26px
       font-family: Nunito
       font-style: normal
@@ -132,6 +136,7 @@
       outline: none
       cursor: pointer
       color: $light
+
     &-offer
       position: absolute
       top: 26px

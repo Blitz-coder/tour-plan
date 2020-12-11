@@ -21,7 +21,7 @@ $(document).ready(function () {
   var reviewsSlider = new Swiper('.reviews-slider', {
     // Optional parameters
     loop: true,
-    autoHeight: true,
+    // autoHeight: true,
 
     // Navigation arrows
     navigation: {

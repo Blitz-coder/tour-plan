@@ -28,6 +28,12 @@
     &__input
       &-group
         flex-basis: 100%
+@media(max-height: 487px)
+  .modal
+    &__dialog
+      overflow: auto
+      position: fixed
+      max-height: 98%
 @media(max-width: 992px)
   .container,
   .newsletter-wrapper
@@ -159,11 +165,7 @@
     &__input
       &-group
         flex-basis: 48%
-  .modal
-    &__dialog
-      overflow: auto
-      position: fixed
-      max-height: 98%
+
   .navbar
     &__search
       margin-right: 73px
@@ -349,7 +351,7 @@
     margin-bottom: 30px
   .map
     width: 100%
-    background-image: url(../img/big-map.jpg)
+
   .newsletter
     &-wrapper
       max-width: 576px
@@ -558,6 +560,13 @@
     &__info
       margin-bottom: 7px
       margin-top: 7px
+@media(max-width: 368px)
+  .modal
+    &__button
+      order: 1
+    &__info
+      margin-bottom: 0px
+      margin-top: 12px
 @media(max-width: 320px)
   .container
     max-width: 279px
@@ -574,6 +583,17 @@
     &-wrapper
     &-grid
       margin-top: 18px
+    &-slider
+      &__button
+        height: 7px
+        width: 4px
+        margin-top: 0px
+        &--prev
+          left: 7px
+          background-size: contain
+        &--next
+          right: 11px
+          background-size: contain
   .map
     height: 172px
   .stars
